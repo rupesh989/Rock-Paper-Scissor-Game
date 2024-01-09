@@ -1,2 +1,4 @@
 # Rock-Paper-Scissor-Game
-rock paper scissor game with user and computer
+rock paper scissor game with the user and computer.
+
+Author - Rupesh Bavaskar         
