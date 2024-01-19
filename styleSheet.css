@@ -1,14 +1,39 @@
 *{
-    padding: 0;
-    margin: 0;
-};
+  /* use this to remove whole page margin/padding of left part gap */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+} 
 
-body{
-    background-color: aqua;
-}
 #h1{
-    background-color: rgb(9, 9, 50);
-    color: rgb(224, 34, 34);
-    align-items: center;
+  /* for heading Rock paper sissors  */
+    background-color: #03162b;
+    color: rgb(242, 127, 5);
+    height: 5rem; /* this gives the box down exta height  */
+    line-height: 5rem; /* this arrage the inside text of div incenter wrt length/height*/  
+}
 
-};
+.choises-opitons{
+  color: #030911;
+  /* background-color: #eff8bcf7; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.choice{
+  height:190px; 
+  width: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+ }
+
+ .choice:hover{
+  opacity: .7;
+  /* cursor: pointer;*/
+  background-color: #000103;
+ }
