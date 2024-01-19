@@ -37,3 +37,46 @@
   /* cursor: pointer;*/
   background-color: #000103;
  }
+
+img{
+/* use only img not include # as it used for id and to check this see inspect element style*/
+  height:150px;
+  width:150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.scoreboard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score{
+  height:250px;
+  width:250px;
+  margin-top: 2rem ;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-size:xx-large;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score{
+  font-size: 5rem;
+}
+
+/* .msg-container{
+  display:block;
+} */
+
+#msg{
+  background-color: aqua;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 100;
+  font-size: 2rem;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+} 
