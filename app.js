@@ -45,6 +45,43 @@ const showWinner = (userWin, userChoice,CompChoice)=>{
 
         //check this udefined compccoiec
 
+const playGame = (userChoice) => {
+
+    console.log("use choice =", userChoice); // when clicked on any image get a log
+
+    // generate computer choice --> modular fuctions// shrots and reusable func
+    const CompChoice = genCompChoice();
+    console.log("comp choice are =", CompChoice);
+
+    if (userChoice === CompChoice) {
+        //dreaw game
+        drawGame();
+    } else {
+        let userWin = true;
+        if (userChoice === "rock") {
+            //sc, pap
+            userWin = CompChoice === "paper " ? false : true;
+        }
+        else if (userChoice === "paper") {
+            //rock,sess
+            userWin = CompChoice === "scissors" ? false : true;
+        }
+        else {
+            userWin = CompChoice === "rock" ? false : true;
+        }
+        showWinner(userWin);
+    }
+}
+
+choices.forEach((choice) => {
+    //console.log(choice); // will give all availble choices divs of images
+        choice.addEventListener("click",() => {
+
+        const userChoice = choice.getAttribute("id"); //to get id of clicked images
+          //console.log("click is working",userChoice)  ; // when clicked on any image get a log
+            playGame (userChoice);
+    });
+}); 
         msg.style.backgroundColor='red';
     }
 };
