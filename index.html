@@ -3,21 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Game</title>
-    <link rel="sy" href="styleSheet.css">
+    <title>RPS Game</title>
+    <!-- <style ></style> -->
+    <link   rel="styleSheet" href="styleSheet.css">
 </head>
+
 <body>
-    <h1 id="h1">Rock Paper Scissors</h1>
-    <div class="options">Choices
-        <div class="choice"> rock</div>
-        <div class="choice">paper</div>
-        <div class="choice">scissors</div>
+    <h1 id="h1"> Rock Paper scissors Game</h1>
+    <div class="choises-opitons">
+            <div class="choice" id="rock">
+            <img src="./Images/rock.png" >
+            </div>
+            <div class="choice" id="paper">
+            <img src="./Images/paper.png" >
+            </div >
+            <div class="choice" id="scissor">
+            <img src="./Images/scissors.png" >
+            </div>     
     </div>
-    <div class="scoreboard">scoreboard
-        <div class="score">0</div>
-        <div class="score">0</div>
+    <div class="scoreboard">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p>
+            <p>CPU</p>
+        </div>
     </div>
-    <div class="msg-container">play game</div>
+    <div class="msg-container">
+        <p id="msg"> Play Your Move</p>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
